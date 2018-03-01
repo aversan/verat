@@ -21,7 +21,7 @@ export default class DocSlider {
         slideToClickedSlide: false,
         initialSlide: 0,
         setWrapperSize: true,
-        autoHeight: true,
+        autoHeight: false,
         observer: true,
         observeParents: true,
         pagination: {
@@ -31,7 +31,6 @@ export default class DocSlider {
           768: {
             slidesPerView: 1,
             slidesPerGroup: 1,
-            autoHeight: false,
           }
         },
         onInit: function(swiper) {
