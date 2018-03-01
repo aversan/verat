@@ -1,0 +1,17 @@
+.form-control {
+  padding-left: 0;
+  padding-right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+
+  &:focus {
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+
+  &-textarea-height-1 {
+    //height: 3.125rem;
+  }
+}

@@ -1,0 +1,139 @@
+body {
+  min-width: 320px;
+}
+
+.is-desktop.disable-hover,
+.is-desktop.disable-hover * {
+  pointer-events: none !important;
+}
+
+.cover {
+  overflow: hidden;
+
+  &-background {
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &-object {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.vertical-align-helper {
+  display:table;
+  pointer-events: none;
+}
+
+.vertical-align-center {
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+.full-width-container {
+  width: calc(100vw - 10px);
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.fill-area-link {
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+}
+
+.section-divider {
+  margin-top: 6.25rem; // 100px
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 2.5rem; // 40px
+  }
+}
+
+.column-1-2 {
+  column-count: 2;
+  column-gap: 100px;
+}
+
+.column-md-1-2 {
+  @include media-breakpoint-up(md) {
+    column-count: 2;
+    column-gap: 100px;
+  }
+}
+
+.custom-counter {
+  li {
+    counter-increment: step-counter;
+    padding-left: 70px;
+    padding-top: 5px;
+    position: relative;
+    min-height: 36px;
+
+    @include media-breakpoint-down(sm) {
+      padding-left: 50px;
+      min-height: 30px;
+    }
+
+    &::before {
+      content: counter(step-counter);
+      font-size: 17px;
+      background-color: theme-color("primary");
+      color: $white;
+      font-weight: 500;
+      padding: 0;
+      border-radius: 100px;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 14px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+.colors-group {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: top;
+  margin: -5px;
+
+  .colors-item {
+    margin: 5px;
+  }
+}
+
+.colors-item {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+
+  &-red { background-color: $red; }
+  &-gray { background-color: $gray-600; }
+  &-green { background-color: $green; }
+  &-brown { background-color: $brown; }
+  &-white { background-color: $white; border: 1px solid $gray-300; }
+}

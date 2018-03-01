@@ -1,0 +1,54 @@
+{%
+set items = [
+  { imageName: 'gallery-wide-01-thumb.jpg', imageWidth: 346, imageHeight: 408 },
+  { imageName: 'gallery-wide-02-thumb.jpg', imageWidth: 612, imageHeight: 408 },
+  { imageName: 'gallery-wide-03-thumb.jpg', imageWidth: 614, imageHeight: 408 },
+  { imageName: 'gallery-wide-04-thumb.jpg', imageWidth: 345, imageHeight: 408 }
+]
+%}
+<section class="main-section gallery-wide-slider" data-module="gallery-wide-slider" id="gallery-wide">
+  <div class="container container-narrow">
+    <h2 class="h1 main-section-title text-uppercase text-center">Производство</h2>
+    <div class="main-section-description text-center typo-lg d-none d-md-block">
+      Все компоненты для пластиковой водосточной системы VERAT производятся на современном
+      высокотехнологичном оборудовании компании JWELL, являющейся одним из крупнейших компаний
+      по производству экструзионного оборудований по полимерам.
+    </div>
+  </div>
+  <div class="swiper-container gallery-wide-slider-container js-swiper-container main-section-gallery">
+    <div class="swiper-wrapper">
+      {% for item in items %}
+      <div class="swiper-slide gallery-wide-slider-slide hoverable cover-background" style="background-image:url(images/main/{{item.imageName}})">
+        <a class="fill-area-link gallery-wide-slider-slide-link" href="http://via.placeholder.com/300x700" target="_blank" data-toggle="modal" data-target="#galleryWideModal" data-module="full-image">
+          <img class="img-fluid invisible" src="images/main/{{item.imageName}}" alt="" width="{{item.imageWidth}}" height="{{item.imageHeight}}">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="swiper-pagination gallery-wide-slider-pagination js-swiper-pagination d-md-none"></div>
+    {#
+    <div class="gallery-wide-slider-prev js-swiper-prev">
+      <i class="icon icon-sprite icon-arrow-prev"></i>
+    </div>
+    <div class="gallery-wide-slider-next js-swiper-next">
+      <i class="icon icon-sprite icon-arrow-next"></i>
+    </div>
+    #}
+  </div>
+  <div class="container container-narrow">
+    <div class="main-section-description typo-lg text-center mb-0 d-none d-md-block">
+      VERAT изготавливается только из первичного и высококачественного сырья ПВХ ведущих производителей Berlocher (Германия), Chemson (Австрия) и Kaneka (Бельгия).
+    </div>
+  </div>
+</section>
+<div class="modal fade" id="galleryWideModal">
+  <div class="vertical-align-helper mx-auto full-height">
+    <div class="modal-dialog vertical-align-center">
+      <div class="modal-content">
+        <div class="modal-body p-0 d-flex align-items-center justify-content-center">
+          <img class="img-fluid js-image" src="" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

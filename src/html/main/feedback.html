@@ -1,0 +1,36 @@
+{% set submitButton %}
+  {% include 'main/feedback-submit-button.html' %}
+{% endset %}
+
+<section class="main-feedback">
+  <div class="container main-feedback-container">
+    <div class="row main-feedback-row flex-md-nowrap">
+      <div class="col-12 main-feedback-col-left">
+        <h4 class="text-uppercase main-feedback-title text-center text-md-left text-primary pt-md-2">Задать вопрос</h4>
+      </div>
+      <div class="col-12 main-feedback-col-center">
+        <div class="row main-feedback-row-fields">
+          <div class="col-12 col-md-6 pb-2 main-feedback-col-fields">
+            <label class="sr-only" for="">Ваше имя</label>
+            <input class="form-control" type="text" placeholder="Ваше имя" id="">
+          </div>
+          <div class="col-12 col-md-6 pb-2 main-feedback-col-fields">
+            <label class="sr-only" for="">Эл. почта</label>
+            <input class="form-control" type="text" placeholder="Эл. почта" id="">
+          </div>
+          <div class="col-12 main-feedback-col-fields">
+            <label class="sr-only" for="">Ваш вопрос</label>
+            <textarea class="form-control form-control-textarea-height-1 js-autosize" name="" id="" cols="30" rows="1" placeholder="Ваш вопрос" id=""></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 main-feedback-col-right mt-6 mt-md-0 text-center text-md-left">
+        <div class="d-none d-md-inline-block js-drop" data-theme="drop-theme-arrows drop_feedback" data-open-on="click" data-position="top right">
+          {{ submitButton | safe }}
+        </div>
+        <div class="d-inline-block d-md-none js-drop" data-theme="drop-theme-arrows drop_feedback" data-open-on="click" data-position="top center">
+          {{ submitButton | safe }}
+        </div>
+      </div>
+    </div>
+</section>

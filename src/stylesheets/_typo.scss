@@ -1,0 +1,30 @@
+h1.text-uppercase,
+.h1.text-uppercase {
+  letter-spacing: .1ex;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 1.875rem; // 30px
+  }
+}
+
+h4.text-uppercase,
+.h4.text-uppercase {
+  font-size: 1.5rem; // 24px
+  letter-spacing: .2ex;
+}
+
+h6.text-uppercase,
+.h6.text-uppercase {
+  font-size: .875rem; // 14px
+  letter-spacing: .2ex;
+}
+
+.typo-lg {
+  font-size: $font-size-lg;
+  line-height: $line-height-lg;
+}
+
+.typo-sm {
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+}

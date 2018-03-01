@@ -1,0 +1,73 @@
+.header-wrapper {
+  height: 5.625rem;
+
+  @include media-breakpoint-down(sm) {
+    height: 4.125rem;
+  }
+}
+
+.header {
+  height: 5.625rem;
+  border-bottom: 1px solid rgba($gray-800, .2);
+
+  @include media-breakpoint-down(sm) {
+    height: auto;
+    min-height: 4.125rem;
+  }
+
+  &-brand-image {
+    @include media-breakpoint-down(sm) {
+      height: 42px;
+      width: auto;
+    }
+  }
+
+  &-collapse {
+    @include media-breakpoint-down(sm) {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+  }
+
+  &-link {
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  &-nav {
+    @include media-breakpoint-down(sm) {
+      margin-top: 12px;
+    }
+  }
+
+  &-nav .header-link {
+    @include media-breakpoint-down(sm) {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 80px;
+      padding-right: 75px;
+    }
+  }
+
+  &-phone {
+    letter-spacing: .2ex;
+    font-weight: 600;
+
+    @include media-breakpoint-down(sm) {
+      border-top: 1px solid $gray-300;
+      padding-top: 25px;
+      padding-bottom: 10px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.header.navbar-light .navbar-nav .show > .nav-link,
+.header.navbar-light .navbar-nav .active > .nav-link,
+.header.navbar-light .navbar-nav .nav-link.show,
+.header.navbar-light .navbar-nav .nav-link.active {
+  @include media-breakpoint-down(sm) {
+    background-color: theme-color("primary");
+    color: $white;
+  }
+}

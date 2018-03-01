@@ -4,11 +4,13 @@ var path        = require('path')
 var projectPath = require('../lib/projectPath')
 
 var watchTask = function() {
-  var watchableTasks = ['fonts', 'iconFont', 'images', 'svgSprite', 'html', 'stylesheets', 'static']
+  var watchableTasks = ['fonts', 'iconFont', 'images', 'pngSprite', 'svgSprite', 'html', 'stylesheets', 'static']
 
   function getTaskPathFor(taskName) {
     switch (taskName) {
       case 'iconFont':
+        return PATH_CONFIG.icons
+      case 'pngSprite':
         return PATH_CONFIG.icons
       case 'svgSprite':
         return PATH_CONFIG.icons

@@ -1,0 +1,13 @@
+.swiper-pagination-bullet {
+  background-color: theme-color("primary");
+  opacity: .25;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-left: 5px;
+  margin-right: 5px;
+}

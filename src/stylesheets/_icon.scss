@@ -1,0 +1,87 @@
+.icon {
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  line-height: 1;
+  overflow: hidden;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-sprite {
+  &:before {
+    content: '';
+    display: inline-block;
+    background-image: url('../images/sprite.png');
+    position: relative;
+  }
+
+  &.icon-arrow-prev-white {
+    @include sprite('icon-arrow-prev-white');
+  }
+
+  &.icon-arrow-next-white {
+    @include sprite('icon-arrow-next-white');
+  }
+
+  &.icon-assembly {
+    @include sprite('icon-assembly');
+  }
+
+  &.icon-check-white {
+    @include sprite('icon-check-white');
+  }
+
+  &.icon-close {
+    @include sprite('icon-close');
+  }
+
+  &.icon-coextrusion {
+    @include sprite('icon-coextrusion');
+  }
+
+  &.icon-send-email {
+    @include sprite('icon-send-email');
+  }
+
+  &.icon-facade {
+    @include sprite('icon-facade');
+  }
+
+  &.icon-strength {
+    @include sprite('icon-strength');
+
+    &::before {
+      top: 4px;
+    }
+  }
+
+  &.icon-temperature {
+    @include sprite('icon-temperature');
+  }
+
+  &.icon-watertightness {
+    @include sprite('icon-watertightness');
+  }
+
+  &.icon-weigher {
+    @include sprite('icon-weigher');
+  }
+
+  &.icon-toggle {
+    @include sprite('icon-toggle');
+  }
+}
+
+.icon-circle {
+  border-radius: 100px;
+  background-color: $white;
+}
+
+.icon-circle-large,
+.icon-sprite.icon-circle-large {
+  width: 105px;
+  height: 105px;
+}

@@ -1,0 +1,38 @@
+.footer {
+  font-size: .875rem;
+  overflow-x: hidden;
+
+  &-row + &-row {
+    position: relative;
+  }
+
+  &-row + &-row::before {
+    content: '';
+    height: 1px;
+    background-color: rgba($white, .4);
+    width: 10000px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -5000px;
+  }
+
+  &-phone {
+    letter-spacing: .1ex;
+  }
+
+  &-copy {
+    margin-left: 60px;
+
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+    }
+  }
+
+  &-logo {
+    @include media-breakpoint-down(sm) {
+      position: relative;
+      left: -28px;
+    }
+  }
+}

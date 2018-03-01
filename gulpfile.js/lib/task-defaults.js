@@ -25,7 +25,8 @@ module.exports = {
     development: {},
     production: {
       devtool: false,
-      uglifyJsPlugin: {},
+      // uglifyJsPlugin: {},
+      babiliJsPlugin: {},
       definePlugin: {
         'process.env': {
           'NODE_ENV': JSON.stringify('production')
@@ -68,6 +69,9 @@ module.exports = {
   ghPages: {
     branch: "gh-pages",
     cacheDir: path.join(os.tmpdir(), pkg.name || "blendid")
+  },
+
+  pngSprite: {
   },
 
   svgSprite: {

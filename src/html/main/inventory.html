@@ -1,0 +1,71 @@
+{%
+  set items = [
+    { number: 1, text: 'Заглушка жёлоба' },
+    { number: 2, text: 'Угол универсальный жёлоба' },
+    { number: 3, text: 'Водосточный жёлоб' },
+    { number: 4, text: 'Соединитель жёлоба' },
+    { number: 5, text: 'Решётка жёлоба защитная' },
+    { number: 6, text: 'Водоприёмная воронка жёлоба' },
+    { number: 7, text: 'Колено универсальное трубы' },
+    { number: 8, text: 'Хомут крепления трубы' },
+    { number: 9, text: 'Соединительная муфта трубы' },
+    { number: 10, text: 'Водосточная труба' },
+    { number: 11, text: 'Водосточный слив трубы' },
+    { number: 12, text: 'Удлинитель кронштейна прямой' },
+    { number: 13, text: 'Удлинитель кронштейна боковой' },
+    { number: 14, text: 'Кронштейн крепления жёлоба' },
+    { number: 15, text: 'Регулируемый угол' }
+  ]
+%}
+<section class="main-section" id="inventory">
+  <div class="container">
+    <h2 class="h1 main-section-title text-center text-uppercase">Комплектация</h2>
+  </div>
+  <div class="main-inventory-container">
+    <div class="main-inventory-image">
+      <img class="img-fluid invisible" width="320" height="501" src="images/main/inventory-image-mobile.jpg">
+    </div>
+    <div class="main-inventory-wrapper">
+      <div class="container d-flex justify-content-md-center">
+        <ul class="main-inventory-list list-unstyled mb-0">
+          {% for item in items %}
+          <li class="main-inventory-item"><span class="main-inventory-item-number">{{ item.number }}</span><span>{{ item.text }}</span></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="main-section-spacer"></div>
+  <div class="container d-flex justify-content-md-center">
+    <dl class="main-properties-list mb-0">
+      <dt class="main-properties-item-title">Материал:</dt>
+      <dd class="main-properties-item-content">ПВХ</dd>
+      <dd class="main-properties-item-divider"></dd>
+      <dt class="main-properties-item-title">Цветовая гамма:</dt>
+      <dd class="main-properties-item-content">
+        <div class="colors-group colors-group">
+          <div class="colors-item colors-item-red" title="красная">красная</div>
+          <div class="colors-item colors-item-gray" title="серая">серая</div>
+          <div class="colors-item colors-item-green" title="зеленая">зеленая</div>
+          <div class="colors-item colors-item-brown" title="коричневая">коричневая</div>
+          <div class="colors-item colors-item-white" title="белая">белая</div>
+        </div>
+      </dd>
+      <dd class="main-properties-item-divider"></dd>
+      <dt class="main-properties-item-title">Температурный режим:</dt>
+      <dd class="main-properties-item-content">от -50°C до +50°C</dd>
+      <dd class="main-properties-item-divider"></dd>
+      <dt class="main-properties-item-title">Срок службы:</dt>
+      <dd class="main-properties-item-content">50 лет</dd>
+      <dd class="main-properties-item-divider"></dd>
+      <dt class="main-properties-item-title">Диаметр:</dt>
+      <dd class="main-properties-item-content">труба — 82 мм</dd>
+      <dd class="main-properties-item-content">жёлоб — 125 мм</dd>
+      <dd class="main-properties-item-divider"></dd>
+      <dt class="main-properties-item-title">Длина:</dt>
+      <dd class="main-properties-item-content">труба — 3 м</dd>
+      <dd class="main-properties-item-content">жёлоб — 1,5 м</dd>
+      <dd class="main-properties-item-divider"></dd>
+    </dl>
+  </div>
+</section>

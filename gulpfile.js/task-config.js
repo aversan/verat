@@ -3,6 +3,7 @@ module.exports = {
   images      : true,
   fonts       : true,
   static      : true,
+  pngSprite   : true,
   svgSprite   : true,
   ghPages     : true,
   stylesheets : true,
@@ -24,6 +25,6 @@ module.exports = {
   },
 
   production: {
-    rev: true
+    rev: false
   }
 }

@@ -1,0 +1,53 @@
+{%
+  set items = [
+    { title: "Гарантийный сертификат", imageName: 'certificate-01-thumb.jpg', imageWidth: 104, imageHeight: 223 },
+    { title: "Брошюра", imageName: 'certificate-02-thumb.jpg', imageWidth: 163, imageHeight: 223 },
+    { title: "Сертификат соответствия", imageName: 'certificate-03-thumb.jpg', imageWidth: 158, imageHeight: 223 },
+    { title: "Сертификат соответствия", imageName: 'certificate-04-thumb.jpg', imageWidth: 157, imageHeight: 223 },
+    { title: "Приложение к сертификату соответствия", imageName: 'certificate-05-thumb.jpg', imageWidth: 159, imageHeight: 224 }
+  ]
+%}
+<section class="main-section doc-slider" data-module="doc-slider" id="certificates">
+  <div class="container">
+    <h2 class="h1 main-section-title text-uppercase text-center mb-0">Сертификаты</h2>
+    <div class="section-divider"></div>
+    <div class="doc-slider-container-2">
+      <div class="swiper-container doc-slider-container js-swiper-container">
+        <div class="swiper-wrapper">
+          {% for item in items %}
+          <div class="swiper-slide doc-slider-slide d-flex flex-column text-center hoverable">
+            <h6 class="doc-slider-slide-title mt-5 pt-1 pb-3 mb-0 order-2 font-weight-normal">
+              <a class="fill-area-link text-dark doc-slider-slide-link" href="http://via.placeholder.com/300x700" target="_blank" data-toggle="modal" data-target="#docsModal" data-module="full-image">
+                {{item.title}}
+              </a>
+            </h6>
+            <div class="doc-slider-slide-image-wrapper d-flex align-items-end justify-content-center">
+              <img class="img-fluid doc-slider-slide-image" src="images/main/{{item.imageName}}" alt="" width="{{item.imageWidth}}" height="{{item.imageHeight}}">
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="swiper-pagination doc-slider-pagination js-swiper-pagination d-md-none"></div>
+      </div>
+      {#
+      <div class="doc-slider-prev js-swiper-prev">
+        <i class="icon icon-sprite icon-arrow-prev"></i>
+      </div>
+      <div class="doc-slider-next js-swiper-next">
+        <i class="icon icon-sprite icon-arrow-next"></i>
+      </div>
+      #}
+    </div>
+  </div>
+</section>
+<div class="modal fade" id="docsModal">
+  <div class="vertical-align-helper mx-auto full-height">
+    <div class="modal-dialog vertical-align-center">
+      <div class="modal-content">
+        <div class="modal-body p-0 d-flex align-items-center justify-content-center">
+          <img class="img-fluid js-image" src="" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
