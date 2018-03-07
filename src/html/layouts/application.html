@@ -10,11 +10,11 @@
     {% include "shared/app-icons.html" %}
     {% block head %}{% endblock %}
 	</head>
-	<body class="page">
+	<body class="page-body">
 		{% block header %}
 			{% include "shared/header.html" %}
 		{% endblock %}
-		<div class="page-content">
+		<div class="page-wrapper">
 		  {% block content %}{% endblock %}
 		</div>
 		{% block footer %}

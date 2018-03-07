@@ -34,6 +34,14 @@ body {
   pointer-events: none;
 }
 
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  height: 100%;
+}
+
 .full-width-container {
   width: calc(100vw - 10px);
   position: relative;
@@ -136,4 +144,14 @@ body {
   &-green { background-color: $green; }
   &-brown { background-color: $brown; }
   &-white { background-color: $white; border: 1px solid $gray-300; }
+}
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-wrapper {
+  flex: 1 1 auto;
 }

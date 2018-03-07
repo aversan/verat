@@ -1,4 +1,4 @@
-export default class Doc {
+export default class FullImage {
   constructor(el) {
     this.el = el;
 
