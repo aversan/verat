@@ -1,6 +1,6 @@
 h1.text-uppercase,
 .h1.text-uppercase {
-  letter-spacing: .1ex;
+  letter-spacing: .2ex;
 
   @include media-breakpoint-down(sm) {
     font-size: 1.875rem; // 30px
