@@ -18,7 +18,8 @@ module.exports = function (env) {
   const jsSrc = projectPath(PATH_CONFIG.src, PATH_CONFIG.javascripts.src)
   const jsDest = projectPath(PATH_CONFIG.dest, PATH_CONFIG.javascripts.dest)
   const publicPath = pathToUrl(TASK_CONFIG.javascripts.publicPath || PATH_CONFIG.javascripts.dest, '/')
-  const rev = TASK_CONFIG.production.rev && env === 'production'
+  //const rev = TASK_CONFIG.production.rev && env === 'production'
+  const rev = false
 
   function ensureLeadingDot(string) {
     return string.indexOf('.') === 0 ? string : `.${string}`
