@@ -81,6 +81,7 @@
     "exports-loader": "0.7.0",
     "gulp-filter": "5.1.0",
     "gulp.spritesmith": "6.9.0",
+    "iframe-resizer": "^3.5.16",
     "ismobilejs": "0.4.1",
     "jquery": "3.3.1",
     "mocha": "3.2.0",

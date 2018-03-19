@@ -46,7 +46,7 @@ $(() => {
         const $dropwrap = $(this);
         const theme = $dropwrap.data('theme');
         const position = $dropwrap.data('position');
-        const openOn = $dropwrap.data('open-on') || 'click';
+        const openOn = $dropwrap.data('open-on') || '';
         const $target = $dropwrap.find('.drop-target');
         $target.addClass(theme);
         const content = $dropwrap.find('.drop-content').html();
@@ -62,6 +62,8 @@ $(() => {
           hoverOpenDelay: 1000,
           // remove: true
         });
+
+        $dropwrap.data('drop', drop);
 
         return drop;
       });
@@ -84,6 +86,14 @@ $(() => {
   $(document).on('click.bs.dropdown.data-api', '[data-dismiss="dropdown"]', function () {
     $(this).parents('.dropdown').eq(0).find('[data-toggle="dropdown"]')
       .dropdown('toggle');
+  });
+
+  $(document).click(function(event) {
+    let clickover = $(event.target);
+    let _opened = $('.header-collapse').hasClass('show');
+    if (_opened && !clickover.hasClass('navbar-toggler')) {
+      $('.header-collapse').collapse('hide');
+    }
   });
 
   // autosize textarea

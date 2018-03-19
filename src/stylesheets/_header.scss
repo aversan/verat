@@ -23,6 +23,8 @@
   }
 
   &-collapse {
+    position: relative;
+
     @include media-breakpoint-down(sm) {
       margin-left: -20px;
       margin-right: -20px;
