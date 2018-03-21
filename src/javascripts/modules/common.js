@@ -42,7 +42,7 @@ $(() => {
     });
 
     const setup = function () {
-      return $('.js-drop').each(function () {
+      return $('.js-drop').each(function() {
         const $dropwrap = $(this);
         const theme = $dropwrap.data('theme');
         const position = $dropwrap.data('position');
@@ -63,7 +63,7 @@ $(() => {
           // remove: true
         });
 
-        $dropwrap.data('drop', drop);
+        $(this)[0].drop = drop;
 
         return drop;
       });
