@@ -1,58 +1,52 @@
-
-
-<section class="main-feedback">
-  <div class="container main-feedback-container">
-    <div class="row main-feedback-row flex-md-nowrap">
-      <div class="col-12 main-feedback-col-left">
-        <h4 class="text-uppercase main-feedback-title text-center text-md-left text-primary pt-md-2">Задать вопрос</h4>
-      </div>
-      <div class="col-12 main-feedback-col-center">
-        <div class="row main-feedback-row-fields">
-          <div class="col-12 col-md-6 pb-2 main-feedback-col-fields">
-            <label class="sr-only" for="">Ваше имя</label>
-            <input class="form-control" type="text" placeholder="Ваше имя" id="">
+<section class="main-section feedback bg-pampas" id="feedback" data-module="feedback">
+  <div class="container feedback-container d-flex flex-column justify-content-center">
+    <div class="row justify-content-center no-gutters">
+      <div class="col-6">
+        <h2 class="main-section-title text-uppercase mb-5 pb-1 text-center">Задать вопрос</h2>
+        <div class="mb-2">
+          <label class="sr-only" for="">Имя</label>
+          <input class="form-control feedback-form-control" type="text" value="" placeholder="Имя">
+        </div>
+        <div class="mb-2">
+          <label class="sr-only" for="">Телефон</label>
+          <input class="form-control feedback-form-control" type="text" value="" placeholder="Телефон">
+        </div>
+        <div class="mb-2">
+          <label class="sr-only" for="">Эл. почта</label>
+          <input class="form-control feedback-form-control" type="text" value="" placeholder="Эл. почта">
+        </div>
+        <div class="">
+          <label class="sr-only" for="">Ваш вопрос</label>
+          <textarea class="form-control form-control-h2 js-autosize feedback-form-control" name="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+        </div>
+        <div class="mt-4 row align-items-center">
+          <div class="col-6">
+            <button class="btn btn-outline-primary btn-width-medium btn-lg text-uppercase js-submit" type="submit">Отправить</button>
           </div>
-          <div class="col-12 col-md-6 pb-2 main-feedback-col-fields">
-            <label class="sr-only" for="">Эл. почта</label>
-            <input class="form-control" type="text" placeholder="Эл. почта" id="">
+          <div class="col-6">
+            <div class="custom-control custom-checkbox custom-control-inline typo-sm feedback-checkbox">
+              <input type="checkbox" class="custom-control-input" id="agree">
+              <label class="custom-control-label" for="agree">Согласен с <a class="text-dark underline" href="">политикой обработки персональных данных</a></label>
+            </div>
           </div>
-          <div class="col-12 main-feedback-col-fields">
-            <label class="sr-only" for="">Ваш вопрос</label>
-            <textarea class="form-control form-control-textarea-height-1 js-autosize" name="" id="" cols="30" rows="1" placeholder="Ваш вопрос" id=""></textarea>
+        </div>
+        <div class="modal feedback-modal js-modal pr-0">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header pb-0">
+                <button type="button" class="close js-close mx-auto" aria-label="Close">
+                  <i class="icon icon-sprite icon-close-primary"></i>
+                </button>
+              </div>
+              <div class="modal-body text-center px-5 pb-5 pt-3">
+                <p class="mb-0 typo-lg">
+                  Спасибо, ваш вопрос принят!
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-12 main-feedback-col-right mt-6 mt-md-0 text-center text-md-left">
-        <div class="d-none d-md-inline-block js-drop" data-theme="drop-theme-arrows drop_feedback" data-position="top right" data-drop="">
-          
-  <button class="btn btn-outline-primary btn-rounded text-uppercase main-feedback-btn drop-target" type="submit">Отправить</button>
-<div class="drop-content">
-  <div class="d-flex flex-nowrap align-items-center">
-    <i class="icon icon-sprite icon-send-email ml-md-5"></i>
-    <div class="ml-4 mr-0 ml-md-6 mr-md-6">
-      <div class="h5 mb-0 font-weight-normal d-md-flex flex-md-column"><span>Спасибо,</span> <span>ваш вопрос отправлен</span></div>
     </div>
-    
   </div>
-</div>
-
-
-        </div>
-        <div class="d-inline-block d-md-none js-drop" data-theme="drop-theme-arrows drop_feedback" data-position="top center" data-drop="">
-          
-  <button class="btn btn-outline-primary btn-rounded text-uppercase main-feedback-btn drop-target" type="submit">Отправить</button>
-<div class="drop-content">
-  <div class="d-flex flex-nowrap align-items-center">
-    <i class="icon icon-sprite icon-send-email ml-md-5"></i>
-    <div class="ml-4 mr-0 ml-md-6 mr-md-6">
-      <div class="h5 mb-0 font-weight-normal d-md-flex flex-md-column"><span>Спасибо,</span> <span>ваш вопрос отправлен</span></div>
-    </div>
-    
-  </div>
-</div>
-
-
-        </div>
-      </div>
-    </div>
 </section>
