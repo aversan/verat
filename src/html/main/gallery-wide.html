@@ -19,7 +19,7 @@ set items = [
     <div class="swiper-wrapper">
       {% for item in items %}
       <div class="swiper-slide gallery-wide-slider-slide hoverable cover-background" style="background-image:url(images/main/{{item.imageName}})">
-        <a class="fill-area-link gallery-wide-slider-slide-link" href="http://via.placeholder.com/300x700" target="_blank" data-toggle="modal" data-target="#galleryWideModal" data-module="full-image">
+        <a class="fill-area-link gallery-wide-slider-slide-link fancybox" href="http://via.placeholder.com/300x700.jpg" target="_blank" rel="gallery-group" title="{{item.title}}">
           <img class="img-fluid invisible" src="images/main/{{item.imageName}}" alt="" width="{{item.imageWidth}}" height="{{item.imageHeight}}">
         </a>
       </div>
@@ -41,6 +41,7 @@ set items = [
     </div>
   </div>
 </section>
+{#
 <div class="modal fade" id="galleryWideModal">
   <div class="vertical-align-helper mx-auto full-height mw-100">
     <div class="modal-dialog vertical-align-center">
@@ -52,3 +53,4 @@ set items = [
     </div>
   </div>
 </div>
+#}
