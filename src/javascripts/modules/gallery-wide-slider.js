@@ -24,6 +24,7 @@ export default class GalleryWideSlider {
         autoHeight: false,
         observer: true,
         observeParents: true,
+        loop: true,
         pagination: {
           el: $pagination,
         },
