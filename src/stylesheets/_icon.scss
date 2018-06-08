@@ -26,8 +26,36 @@
     @include sprite('icon-arrow-next-white');
   }
 
+  &.icon-wallet {
+    @include sprite('icon-wallet');
+  }
+
+  &.icon-shine {
+    @include sprite('icon-shine');
+  }
+
+  &.icon-temperature {
+    @include sprite('icon-temperature');
+  }
+
+  &.icon-save-form {
+    @include sprite('icon-save-form');
+  }
+
   &.icon-assembly {
     @include sprite('icon-assembly');
+  }
+
+  &.icon-assembly {
+    @include sprite('icon-assembly');
+  }
+
+  &.icon-strength {
+    @include sprite('icon-strength');
+  }
+
+  &.icon-feather {
+    @include sprite('icon-feather');
   }
 
   &.icon-check-white {
@@ -38,40 +66,8 @@
     @include sprite('icon-close');
   }
 
-  &.icon-coextrusion {
-    @include sprite('icon-coextrusion');
-  }
-
   &.icon-send-email {
     @include sprite('icon-send-email');
-  }
-
-  &.icon-facade {
-    @include sprite('icon-facade');
-  }
-
-  &.icon-strength {
-    @include sprite('icon-strength');
-
-    &::before {
-      top: 4px;
-    }
-  }
-
-  &.icon-temperature {
-    @include sprite('icon-temperature');
-  }
-
-  &.icon-watertightness {
-    @include sprite('icon-watertightness');
-  }
-
-  &.icon-weigher {
-    @include sprite('icon-weigher');
-  }
-
-  &.icon-toggle {
-    @include sprite('icon-toggle');
   }
 }
 
@@ -85,3 +81,14 @@
   width: 105px;
   height: 105px;
 }
+
+.icon-border {
+  border: 2px solid $white;
+}
+
+.icon-border-large,
+.icon-sprite.icon-border-large {
+  width: 94px;
+  height: 94px;
+}
+

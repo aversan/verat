@@ -202,7 +202,7 @@
     min-height: 785px;
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: $blue-light;
+    background-color: $gray-200;
 
     @include media-breakpoint-down(sm) {
       min-height: 0;

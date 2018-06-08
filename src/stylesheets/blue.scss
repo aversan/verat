@@ -96,7 +96,7 @@ h6 { font-size: $h6-font-size; }
 .calc-drain-items .calc-drain-item {
   padding-top: 40px;
   padding-bottom: 40px;
-  border-top: 1px solid var(--blue-light);
+  border-top: 1px solid var(--gray-200);
 
   @include media-breakpoint-down(sm) {
     padding: 30px 20px;
@@ -105,7 +105,7 @@ h6 { font-size: $h6-font-size; }
   }
 
   &:last-child {
-    border-bottom: 1px solid var(--blue-light);
+    border-bottom: 1px solid var(--gray-200);
     padding-bottom: 100px;
 
     @include media-breakpoint-down(sm) {
@@ -174,8 +174,8 @@ h6 { font-size: $h6-font-size; }
       line-height: 100px;
       text-transform: capitalize;
       border-radius: 100px;
-      background: var(--blue-light);
-      color: var(--blue);
+      background: var(--gray-200);
+      color: var(--primary);
 
       @include media-breakpoint-down(sm) {
         width: 90px;
@@ -185,7 +185,7 @@ h6 { font-size: $h6-font-size; }
     }
 
     .roof-item input:checked + label {
-      background: var(--blue);
+      background: var(--primary);
       color: var(--white);
       cursor: pointer;
       pointer-events: none;
@@ -246,7 +246,7 @@ h6 { font-size: $h6-font-size; }
   }
 }
 
-.calc-drain-item fieldset label[for=input_red] .color-selector-probe { background-color: var(--red) !important; }
+.calc-drain-item fieldset label[for=input_red] .color-selector-probe { background-color: var(--pink) !important; }
 .calc-drain-item fieldset label[for=input_grey] .color-selector-probe { background-color: var(--gray) !important;; }
 .calc-drain-item fieldset label[for=input_green] .color-selector-probe { background-color: var(--green) !important;; }
 .calc-drain-item fieldset label[for=input_brown] .color-selector-probe { background-color: var(--brown) !important;; }
@@ -259,7 +259,7 @@ h6 { font-size: $h6-font-size; }
 .calc-drain-item fieldset input:checked + label {
   cursor: default;
   pointer-events: none;
-  background-color: var(--blue-light);
+  background-color: var(--gray-200);
 }
 
 .calc-drain-item fieldset input:checked + label::before {
@@ -270,14 +270,13 @@ h6 { font-size: $h6-font-size; }
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 39px;
-  height: 30px;
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAeCAYAAACv1gdQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUZGMjRDODkyQjVBMTFFODhEQzE5NzgwOUMwNkM1NDUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUZGMjRDOEEyQjVBMTFFODhEQzE5NzgwOUMwNkM1NDUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFRkYyNEM4NzJCNUExMUU4OERDMTk3ODA5QzA2QzU0NSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFRkYyNEM4ODJCNUExMUU4OERDMTk3ODA5QzA2QzU0NSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PhlQdkYAAAPmSURBVHjavJh7SJNRFMDv5uY2n5mPdJppD11oGFlblPRXEFFBoEQohEVQQiREFFRQZP+EFdQf+UfQH2J/BJmVPbCCHprvlDR0S525OR9zD910Tud2O3f7vpi6ze+bcwcO37i799zfd+6559zvcjDGyJNUN8jRGstW0BJQKWgdaAWonv4zP0+CON7g1lLgxU8I+CHPM1NiUUykCI0bp1GfxoDsDrwPoJrofkGHA7DjIgG/Zk9GEoqPDvvfrtJOoc6BcbRgd8gAsJW0cYMMdlLA59XkbktcBEYkNSEa7dy8AfFCuC3Q70BQPQcTFglDeVWyTDGKWwLmLuoJE+roHyMezOYGCaxQJOBV7ZUk+wQjsjE+CmWnxZOfJdwggJ0OF/KfSTOTUWyUiNGYlLhI8ijgrTVYmID/VAYei4kQMh5nMFvJo43nxWg2PA6DymHn1PoJdj5CFFohhRhjA2aenUfdg1rys2LZhgCjN6LCBGWJ68OR2TKPRg3TD6G5HCA1LMDOgo0nBCw6XMDKY+19I2TeUpjvESJwtL6o773+rWsIz87ZMBG7w4F7VToM7UST3Pt6U+h3oa59ABvNs5iNTE5b8fu2fjJPMW3L3WjZ924VtlBg7tKjmsDVDU7A9BXALn78qcRTM1ZWYAZ4EfJCMP6cuz3a6O2G3yo8Z1vwakCh1pPBj0FTvYCVfupQYpNljhWY3mTB71r6iO0zS20So0VkKa3zCysakqt1uNq1xNuXgF363DnoF9gH11Ke8vTCJM+VZG2KR1CIVwxYUqhzoMSEcDk9EPQSKvivwG68L5OIUaQolHHwaydnULN8BM1YbcUQ/JWe+pBUIuRyOYyNbhHHILK/u5TjvQB2FRLrXWmGGIUJ+Yxt6EwW1KoYQXM2ez6AvfTWj3iuAnYkHFcczA9iALgjPQElxoSzBhuD41GL3AlW6AvMKVTM3GtVaLBtwc4qZkiqYSNa4wx+0/SHxNhRJmnJPajLm3uHfe7Y1Qgkc/zWtSsLmIAtgqMA7zT2DGM4rgQUTKMz41eNCgJ2jCnYMjgK8EEgPTiqN+PaZudSHmID5hGOrhb1kJSZ5D5fMqSdomPsCFswr3B01WjsUfvtwWGdCdf8cC7lfn/AfMLRHnRVDxsrsMGxSfzaFWMH/QVbEY4CvEkOBEwB4SsKPCYnYLtXA8YIjgYkHrRYfQMqR430UuatFowxHAV47cuvv143yQCAUYeCXYEAYwVHAd76Ch6cnp1f5jEqj+UECowo6+9WKPaX10UIy7NS45w1dUhrQv0aA4K0nQu1siOQH0gcPy9yjlCXMGmgldQljDmQYOQi558AAwBjrpXp4wfxYwAAAABJRU5ErkJggg==') 0 0 no-repeat;
+  width: 37px;
+  height: 28px;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAcCAYAAADm63ZmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDlDMUE4RTY2QUYzMTFFOEExODRERjBERDJBMzA0MEYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDlDMUE4RTc2QUYzMTFFOEExODRERjBERDJBMzA0MEYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0OUMxQThFNDZBRjMxMUU4QTE4NERGMEREMkEzMDQwRiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0OUMxQThFNTZBRjMxMUU4QTE4NERGMEREMkEzMDQwRiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PjWbo/sAAAJPSURBVHjaxJdNKGVhGMddF2nYUUpEFjNqpBBTTGYWNhZSE42aoTEZFrIgppmwmGbKYtRMsxolC98fkVkgEU1K42MzOysppBlfhSQK/6f+p063c+5533uu66lft3vO+77nf573eZ/nOZ7tqLiwe7B48BHkgVnQCS6MmxH3ICgZ9ILn/P8UPAT14FQuhIdYUALoNgkyrBL8ADGh9lQiGAKFNvffgGhQGypRSWAYFDiMqwCHodi+NHqoQHF82V17KoUeytWYs3aXnpITNaYpaAO0WInKkBugxIWgxwEIWgUvRJjv9j0Dgzwpl+AraAc3GounMw9lasz5C16CLd88VQQGKEgsCrSCT8CruLh4eRxkawhaNwsy56li0Aesak4b88d7h8XFMyP0lKr9kdMGds0Xw5lde20EiXkYYx1+KoB4ZlRT0Ap45SvIEPWFBdLJPoDv9JrZcuihRxqC5kE52LS6GWHxEH/WwKBvBNcgn3GYqrHGEj30326At8n7YA+/pSBScdEnIJbB36MpaBpUgX/+BnnYT70GP40qrWhXGi8itsCgPnYaaARuP3gLjjQeoiNohi9+rDLYnDxHmTCHNOPMyX5R0JnqBN8jPsk9PwySoCnwTkeQXec5xtNx4FLQADvKfd2JdslQmvkaFx6bkA5SNYZURRmxUO50fC1M0kQ1OA/UxU791CK3QFXYIL9KTtzsu0qTN8cqvuMwrptBfeH2dKh2nr8pzK40dIE6N1sWiCixZZsiKh5qZi0MinkC+GzPAp9Z86Tl+caSEzS7FWAAYnxsxE4Zzw4AAAAASUVORK5CYII=') center center no-repeat;
 
   @include media-breakpoint-down(sm) {
     width: 26px;
     height: 20px;
-    background-size: cover;
     bottom: 12px;
   }
 }
@@ -301,7 +300,7 @@ h6 { font-size: $h6-font-size; }
   font-weight: 600;
   line-height: 1;
   padding-top: 30px;
-  border-top: 1px solid var(--blue-light);
+  border-top: 1px solid var(--gray-200);
   margin-top: 20px;
 
   @include media-breakpoint-down(sm) {
@@ -313,7 +312,7 @@ h6 { font-size: $h6-font-size; }
   .sum {
     font-size: 2.25rem;
     font-weight: 800;
-    color: var(--blue);
+    color: var(--primary);
     padding-left: 0;
     margin-left: 10px;
 
@@ -369,16 +368,16 @@ h6 { font-size: $h6-font-size; }
 
 .calc-drain-table .table .tr:hover .td,
 .calc-drain-table .table .tr.active .td {
-  background-color: var(--blue-light);
+  background-color: var(--gray-200);
 }
 
 .calc-drain-table .table .tr.head-tr .td,
 .calc-drain-table .table .tr.head-tr:hover .td {
-  background: var(--blue);
+  background: var(--primary);
 }
 
 .calc-drain-table .table .tr.head-tr .td:last-child::after {
-  background: var(--blue);
+  background: var(--primary);
 }
 
 .calc-drain-result .img {
@@ -465,7 +464,7 @@ h6 { font-size: $h6-font-size; }
 .calc-drain-btn .btn a {
   font-size: 1rem;
   font-weight: 600;
-  background-color: var(--blue);
+  background-color: var(--primary);
   color: var(--white);
   border-radius: 100px;
   display: block;

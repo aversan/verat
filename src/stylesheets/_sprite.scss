@@ -11,9 +11,9 @@
       min-width: 43px;
     }
     @if $filename == icon-assembly {
-      height: 62px;
-      width: 64px;
-      min-width: 64px;
+      height: 47px;
+      width: 67px;
+      min-width: 67px;
     }
     @if $filename == icon-check-white {
       height: 30px;
@@ -21,117 +21,107 @@
       min-width: 39px;
     }
     @if $filename == icon-close {
-      height: 34px;
+      height: 33px;
       width: 32px;
       min-width: 32px;
     }
-    @if $filename == icon-coextrusion {
-      height: 42px;
-      width: 74px;
-      min-width: 74px;
+    @if $filename == icon-feather {
+      height: 62px;
+      width: 69px;
+      min-width: 69px;
     }
-    @if $filename == icon-facade {
-      height: 57px;
-      width: 88px;
-      min-width: 88px;
+    @if $filename == icon-save-form {
+      height: 72px;
+      width: 61px;
+      min-width: 61px;
     }
     @if $filename == icon-send-email {
-      height: 40px;
-      width: 88px;
-      min-width: 88px;
+      height: 39px;
+      width: 87px;
+      min-width: 87px;
     }
-    @if $filename == icon-strength {
-      height: 87px;
-      width: 92px;
-      min-width: 92px;
-    }
-    @if $filename == icon-temperature {
-      height: 72px;
+    @if $filename == icon-shine {
+      height: 76px;
       width: 72px;
       min-width: 72px;
     }
-    @if $filename == icon-toggle {
-      height: 26px;
-      width: 30px;
-      min-width: 30px;
+    @if $filename == icon-strength {
+      height: 64px;
+      width: 69px;
+      min-width: 69px;
     }
-    @if $filename == icon-watertightness {
-      height: 96px;
-      width: 96px;
-      min-width: 96px;
+    @if $filename == icon-temperature {
+      height: 61px;
+      width: 69px;
+      min-width: 69px;
     }
-    @if $filename == icon-weigher {
-      height: 68px;
-      width: 64px;
-      min-width: 64px;
+    @if $filename == icon-wallet {
+      height: 71px;
+      width: 68px;
+      min-width: 68px;
     }
   }
 
   &::before {
     @if $filename == icon-arrow-next-white {
-      background-position: 0px -168px;
+      background-position: -201px -87px;
       height: 87px;
       width: 43px;
     }
     @if $filename == icon-arrow-prev-white {
-      background-position: -252px 0px;
+      background-position: -201px 0px;
       height: 87px;
       width: 43px;
     }
     @if $filename == icon-assembly {
-      background-position: -188px -68px;
-      height: 62px;
-      width: 64px;
+      background-position: -244px 0px;
+      height: 47px;
+      width: 67px;
     }
     @if $filename == icon-check-white {
-      background-position: -252px -87px;
+      background-position: -244px -47px;
       height: 30px;
       width: 39px;
     }
     @if $filename == icon-close {
-      background-position: -252px -117px;
-      height: 34px;
+      background-position: -244px -77px;
+      height: 33px;
       width: 32px;
     }
-    @if $filename == icon-coextrusion {
-      background-position: -43px -208px;
-      height: 42px;
-      width: 74px;
+    @if $filename == icon-feather {
+      background-position: -69px -76px;
+      height: 62px;
+      width: 69px;
     }
-    @if $filename == icon-facade {
-      background-position: -72px -96px;
-      height: 57px;
-      width: 88px;
+    @if $filename == icon-save-form {
+      background-position: -140px 0px;
+      height: 72px;
+      width: 61px;
     }
     @if $filename == icon-send-email {
-      background-position: -43px -168px;
-      height: 40px;
-      width: 88px;
+      background-position: -69px -140px;
+      height: 39px;
+      width: 87px;
     }
-    @if $filename == icon-strength {
-      background-position: -96px 0px;
-      height: 87px;
-      width: 92px;
-    }
-    @if $filename == icon-temperature {
-      background-position: 0px -96px;
-      height: 72px;
+    @if $filename == icon-shine {
+      background-position: 0px 0px;
+      height: 76px;
       width: 72px;
     }
-    @if $filename == icon-toggle {
-      background-position: -188px -130px;
-      height: 26px;
-      width: 30px;
+    @if $filename == icon-strength {
+      background-position: 0px -76px;
+      height: 64px;
+      width: 69px;
     }
-    @if $filename == icon-watertightness {
-      background-position: 0px 0px;
-      height: 96px;
-      width: 96px;
+    @if $filename == icon-temperature {
+      background-position: 0px -140px;
+      height: 61px;
+      width: 69px;
     }
-    @if $filename == icon-weigher {
-      background-position: -188px 0px;
-      height: 68px;
-      width: 64px;
+    @if $filename == icon-wallet {
+      background-position: -72px 0px;
+      height: 71px;
+      width: 68px;
     }
   }
 }

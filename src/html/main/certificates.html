@@ -1,10 +1,10 @@
 {%
   set items = [
-    { title: "Гарантийный сертификат", imageName: 'certificate-01-thumb.jpg', imageWidth: 104, imageHeight: 223 },
-    { title: "Брошюра", imageName: 'certificate-02-thumb.jpg', imageWidth: 163, imageHeight: 223 },
-    { title: "Сертификат соответствия", imageName: 'certificate-03-thumb.jpg', imageWidth: 158, imageHeight: 223 },
-    { title: "Сертификат соответствия", imageName: 'certificate-04-thumb.jpg', imageWidth: 157, imageHeight: 223 },
-    { title: "Приложение к сертификату соответствия", imageName: 'certificate-05-thumb.jpg', imageWidth: 159, imageHeight: 224 }
+    { title: "Буклет «Водосточная система ТЕХНОНИКОЛЬ»", imageName: 'certificate-01-thumb.jpg', imageWidth: 158, imageHeight: 223 },
+    { title: "Гарантийный сертификат на водосточную систему ", imageName: 'certificate-02-thumb.jpg', imageWidth: 158, imageHeight: 223 },
+    { title: "Экспертное заключение ЦГЭ ВО", imageName: 'certificate-03-thumb.jpg', imageWidth: 158, imageHeight: 223 },
+    { title: "Отказное письмо по ОПР", imageName: 'certificate-04-thumb.jpg', imageWidth: 158, imageHeight: 223 },
+    { title: "Сертификат", imageName: 'certificate-05-thumb.jpg', imageWidth: 158, imageHeight: 223 }
   ]
 %}
 <section class="main-section doc-slider" data-module="doc-slider" id="certificates">
@@ -17,7 +17,7 @@
           {% for item in items %}
           <div class="swiper-slide doc-slider-slide d-flex flex-column text-center hoverable">
             <h6 class="doc-slider-slide-title mt-5 pt-1 pb-3 mb-0 order-2 font-weight-normal">
-              <a class="fill-area-link text-dark doc-slider-slide-link fancybox" href="http://via.placeholder.com/300x700.jpg" target="_blank" rel="doc-group" title="{{item.title}}">
+              <a class="fill-area-link text-dark doc-slider-slide-link" href="" download>
                 {{item.title}}
               </a>
             </h6>

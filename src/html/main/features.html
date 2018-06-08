@@ -1,33 +1,38 @@
 {%
 set items = [
-  { iconName: 'assembly', title: 'Легкая сборка и установка', description: 'Систему легко собрать исходя из конкретных требований и геометрии здания.' },
-  { iconName: 'temperature', title: 'Выдерживает колебания температур от -50 до +50°С', description: 'Благодаря специальной технологии изготовления и используемым материалам система надёжно работает в условиях перепадов температур от –50°C до +50°C, обладает отличной устойчивостью к ультрафиолетовым излучениям.' },
-  { iconName: 'strength', title: 'Повышенная ударопрочность и устойчивость к деформации', description: 'Прочный пластик выдерживает большие механические нагрузки в  течение всего срока эксплуатации.' },
-  { iconName: 'watertightness', title: 'Высокая герметичность соединений', description: 'Герметичность соединения обеспечивают специальные резиновые уплотнители и защелкивающие элементы.' },
-  { iconName: 'facade', title: 'Подходит для любой конфигурации кровли и фасада', description: 'Может устанавливаться как на новые, так и на уже эксплуатируемые здания любой сложности и конфигурации.' },
-  { iconName: 'weigher', title: 'Не создаёт дополнительной нагрузки на карниз', description: 'Система изготовлена из современных прочных, но при этом легких материалов: благодаря этому не создается нагрузка на карниз.' },
-  { iconName: 'coextrusion', title: 'Коэкструзия', description: 'Использование технологии коэкструзии наделяет систему высоким глянцем и светлой внутренней поверхностью, уменьшающей нагревание, что ограничивает термическое расширение целого отрезка желоба и трубы.' }
+  { iconName: 'assembly', title: 'Система «лёгкий монтаж»' },
+  { iconName: 'feather', title: 'Лёгкий вес' },
+  { iconName: 'strength', title: 'Механическая стойкость' },
+  { iconName: 'save-form', title: 'Память формы' },
+  { iconName: 'temperature', title: 'Широкий диапазон рабочих температур' },
+  { iconName: 'shine', title: 'Усиленный глянцевый блеск' },
+  { iconName: 'wallet', title: 'Умный выбор' }
 ]
 %}
 <section class="main-section main-section-py bg-primary text-light">
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row">
       <div class="col-12 col-md-4 text-center">
-        <img class="img-fluid mb-4 mb-md-0 main-features-image" src="images/main/features-warranty.png" width="243" height="244" alt="">
+        <img class="img-fluid mb-4 mb-md-0 main-features-image" src="images/main/features-warranty.png" width="166" height="211" alt="Срок службы 50 лет">
       </div>
       <div class="col-12 col-md-8">
-        <p class="typo-lg mb-0 main-features-description text-center text-md-left">
-          Современная пластиковая водосточная система VERAT выполнена из высокопрочного поливинилхлорида (ПВХ) и используется для эффективного сбора талой и дождевой воды с кровли в коттеджном и малоэтажном строительстве. Пластиковый водосток VERAT отличается стабильным качеством и долговечностью. Преимущества пластикового водостока выгодно выделяют его среди аналогов. Используя универсальную схему монтажа пластиковую водосточную систему VERAT может смонтировать человек не обладающий специальными навыками. Чтобы ваш дом служил многие десятилетия, обязательно установите пластиковую водосточную систему VERAT.
-        </p>
+        <div class="typo-lg main-features-description text-center text-md-left">
+          <p>
+            Организованный сбор талой и дождевой воды с крыши и отвод ее от фундамента здания или сооружения — основная функция водосточной системы ТЕХНОНИКОЛЬ. Установка такой системы позволит защитить фасад и цоколь здания от негативного воздействия воды и&nbsp;преждевременного разрушения.
+          </p>
+          <p class="mb-0">
+            Пластиковая водосточная система ТЕХНОНИКОЛЬ предназначена для применения в коттеджном и малоэтажном строительстве. Обладает отличными характеристиками, выдерживает сильные морозы, имеет высокую устойчивость к УФ-излучению и&nbsp;различным агрессивным воздействиям. Не подвержена коррозии.
+          </p>
+        </div>
       </div>
     </div>
     <div class="section-divider d-none d-md-block"></div>
     <ul class="justify-content-around flex-md-nowrap main-features-list row list-unstyled mb-0 mt-3 mt-md-0">
       {% for item in items %}
       <li class="main-features-item col-6 text-center text-md-left mt-3 mt-md-0">
-        <i class="icon icon-sprite icon-{{item.iconName}} icon-circle icon-circle-large main-features-item-icon"></i>
-        <h6 class="text-uppercase main-features-item-title mt-2 mt-md-4 mb-0 mb-md-3 mx-auto mx-md-0 font-weight-bold">{{item.title}}</h6>
-        <div class="main-features-item-description typo-sm d-none d-md-block mx-auto mx-md-0">{{item.description}}</div>
+        <i class="icon icon-sprite icon-{{item.iconName}} icon-border icon-border-large main-features-item-icon"></i>
+        <h6 class="text-uppercase main-features-item-title mt-2 mt-md-4 mb-0 mx-auto mx-md-0 font-weight-bold">{{item.title}}</h6>
+        {#<div class="main-features-item-description typo-sm d-none d-md-block mx-auto mx-md-0">{{item.description}}</div>#}
       </li>
       {% endfor %}
     </ul>
